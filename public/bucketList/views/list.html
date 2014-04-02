@@ -1,0 +1,11 @@
+<section data-ng-controller="BucketListController" data-ng-init="getAllBucketList()">
+	<ul class="bucketList unstyled">
+		<li data-ng-repeat="item in bucketList">
+			<span>{{item.created | date:'medium'}}</span> /
+			<span>{{item.title}}</span>
+			
+			<div>{{item.description}}</div>
+		</li>
+	</ul>
+	<a href="/#!/addBucketList">Create One</a>
+</section>
